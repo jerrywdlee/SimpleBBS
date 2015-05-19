@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta charset="utf-8" content="width=device-width, initial-scale=0" />
+	
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+
+	<!-- Include the jQuery library -->
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+	<!-- Include the jQuery Mobile library -->
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+ <script src="script.js"></script>
+ 
+ <style>
+ h1,h2,p{
+  font-size:1.7em;
+ }
+ </style>
+ 
+</head>
+<body>
+<div data-role="page" id="pageone" >
+<div data-role="header" data-theme="b" data-position="fixed" >
+<h1 style="font-size: 2em;" >簡易掲示板</h1>
+</div>
+<div data-role="main" class="ui-content" data-theme="c" >
+
+<input type="text" name="name" id="name" class="input" placeholder="名前" style="font-size:1.5em" required="required"/>
+<br/>
+<textarea style="font-size:0.9em;min-height:100px;" name="msg" id="msg" class="input" placeholder="メッセージ" required></textarea>
+<!-- <input type="text" name="msg1"> -->
+<div data-role="fieldcontain">
+      <label for="lname" style="font-size:1.5em; "><a id="code"></a>の答え</label>     
+      <input type="number" name="lname" id="lname" placeholder="算用数字を入れてください">
+</div>
+<button data-icon="refresh" data-iconpos="top" style="font-size:2em">投 稿</button>
+<!--
+<input value="Send!" type="submit"/>
+-->
+
+<div>
+<div id="allMsg"></div>
+</div>
+
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed" >
+		<h1>Copy Right: Jerry Lee 2015</h1>
+</div>
+</div>
+
+
+</body>
+</html>
